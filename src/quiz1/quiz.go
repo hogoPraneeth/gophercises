@@ -1,4 +1,10 @@
-package main
+package quiz1
 
-func main() {
+import (
+	"fmt"
+)
+
+func Run() {
+	fmt.Println("hellp from quiz")
+
 }

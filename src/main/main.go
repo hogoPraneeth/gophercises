@@ -13,6 +13,10 @@ func main() {
 	if len(os.Args) > 3 && os.Args[2] == "-c" {
 		config = os.Args[3]
 	}
+	if len(os.Args) < 2 {
+		fmt.Println("USAGE: ARGUMENTS::\n\t -h : HELP\n\t 1: Quiz1")
+		return
+	}
 	switch os.Args[1] {
 	case "-h":
 		fmt.Println("ARGUMENTS::\n\t -h : HELP\n\t 1: Quiz1")

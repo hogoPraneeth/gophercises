@@ -10,12 +10,9 @@ import (
 
 func main() {
 	// default
-	goPath := os.Getenv("GOPATH")
-	if goPath == "" {
-		goPath = build.Default.GOPATH
-	}
-	config :=  goPath + "/config/problems.csv"
-	fmt.Println(goPath)
+	appBase := os.Args[0] + "/../../";
+	config :=  appBase + "/config/problems.csv"
+	fmt.Println(appBase)
 	if len(os.Args) > 3 && os.Args[2] == "-c" {
 		config = os.Args[3]
 	}

@@ -1,17 +1,15 @@
 package main
 
 import (
-	"os"
 	"fmt"
+	"os"
 	"quiz1"
-	"go/build"
 )
-
 
 func main() {
 	// default
-	appBase := os.Args[0] + "/../../";
-	config :=  appBase + "/config/problems.csv"
+	appBase := os.Args[0] + "/../../"
+	config := appBase + "/config/problems.csv"
 	fmt.Println(appBase)
 	if len(os.Args) > 3 && os.Args[2] == "-c" {
 		config = os.Args[3]
